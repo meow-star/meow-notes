@@ -4,43 +4,58 @@
 
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/meow.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/meow.js"></script>
+		<!--<script src = "https://cdn.wilddog.com/js/client/current/wilddog.js" ></script>-->
 		<title>喵笔记</title>
 	</head>
 
 	<body>
 		<div class="meow">
-		<div class="menu">
-			<h1> </h1>
-			<ul>
-				<li id="create">新建笔记</li>
-				<li id="view-note">查看笔记</li>
-				<li id="menu-notes">笔记本</li>
-			</ul>
-		</div>
-		<div class="list">
-			<div class="list-header">
-				<h1>喵笔记</h1>
-			<p class="small-h1"><span id="notes-number">n</span>条笔记</p>
-			</div>
-			<div class="list-title">
+			<div class="menu">
+				<h1> </h1>
 				<ul>
-					<li>1</li>
-					<li>2 </li>
+					<li id="create">新建笔记</li>
+					<li id="view-note">查看笔记</li>
+					<li id="note-book">笔记本</li>
 				</ul>
 			</div>
-		</div>
-		<div class="cut"></div>
-		<div class="content">
-			<div class="note-title">
-				<h1>hello,everyone</h1>
+			<div class="list">
+				<div class="list-header">
+					<h1>喵笔记</h1>
+				</div>
+				<div class="list-title">
+					<ul id="get-list">
+						<li id="remove-li">1</li>
+					</ul>
+				</div>
 			</div>
-			<div class="note-content">
-				<p>试试试试试试试试试试试试</p>
-			</div>	
-		</div>
-		</div>
+			<div class="cut"></div>
+			<div class="content">
+				<div id="note-content">
+					<div class="note-title" id="view-note-title">
+						<h1 id="remove-h1">hello,everyone</h1>
+					</div>
+					<div class="note-content" id="view-note-content">
+						<p id="remove-p">meow,就是喵，喵喵喵</p>
+					</div>
+				</div>
+				<form action="" id="create-note">
 
+					<div class="create-title">
+						<div class="submit">
+							<button id="note-save" class="btn-left" type="submit">保存</button>
+							<button id="give-up" class="btn-right">放弃</button>
+						</div>
+						<input type="text" id="title-value" placeholder="新笔记" />
+					</div>
+					<div class="note-content">
+						<textarea id="content-value">xx</textarea>
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
 
 </html>
