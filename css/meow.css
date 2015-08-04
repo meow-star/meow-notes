@@ -2,7 +2,6 @@
 	.meow-content {
 		display: none;
 	}
-
 }
 body {
 	font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
@@ -24,13 +23,12 @@ header {
 .meow-body {
 	display: flex;
 	flex: 1;
-	background: black;
+	background: #FFFFFF;
 }
 /*两栏的宽度通过flex设定*/
 
 .meow-list {
 	flex: 1;
-
 }
 .meow-content {
 	flex: 3;
@@ -70,10 +68,12 @@ header a {
 	border-radius: 9px;
 	margin: 10px;
 }
-
+.note-panel-title a {
+	text-decoration: none;
+	color: #A5A1A1;
+}
 .note-panel-title {
 	text-align: center;
-	color: #A5A1A1;
 	font-size: 20px;
 }
 .note-panel-content {
@@ -89,7 +89,6 @@ header a {
 	color: #FFFFFF;
 }
 .note-panel-time {
-	
 	float: left;
 }
 .note-panel-edit {
@@ -99,20 +98,47 @@ header a {
 	color: #A5A1A1;
 	text-align: center;
 }
-.meow-content-note{
-padding: 10px;
-margin: 0 20px;
-border: 1px solid #E0E0E0;
-border-radius: 6px;
-text-align: center;
-overflow: auto;
+.meow-content-note {
+	padding: 10px;
+	margin: 0 20px;
+	border: 1px solid #E0E0E0;
+	border-radius: 6px;
+	text-align: center;
+	overflow: auto;
 }
 .content-edit {
-margin: 0 20px;
-padding: 10px;
-line-height: 10px;
-float: right;
-font-size: 30px;}
+	margin: 0 20px;
+	padding: 10px;
+	line-height: 10px;
+	float: right;
+	font-size: 30px;
+}
+/*这是一个容器*/
+
+.edit-content {
+	padding: 30px;
+	text-align: center;
+}
+.edit-content .insert-title {
+	border: 1px solid #A5A1A1;
+	border-radius: 5px;
+	width: 100%;
+	padding: 6 10px;
+	margin-bottom:14px ;
+}
+.insert-content {
+	border-radius: 5px;
+	font-size: 18px;
+	width: 100%;
+	resize: none;
+	height: 300px;
+}
+.post-icons {
+	float: right;
+	font-size: 20px;
+	letter-spacing: 15px;
+	padding: 10px;
+}
 /*组件*/
 /*.ul {
 	position: relative;

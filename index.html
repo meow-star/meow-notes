@@ -12,14 +12,14 @@
 
 	<body class="meow">
 		<header>
-			<li><i class="fa fa-plus"></i><a href="#">新建笔记</a></li>
-			<li><i class="fa fa-book"></i><a href="">笔记本</a></li>
+			<li><i class="fa fa-plus"></i><a id="header-create" href="#">新建笔记</a></li>
+			<li><i class="fa fa-book"></i><a id="header-notebook" href="">笔记本</a></li>
 		</header>
 		<div class="meow-body">
 			<div class="meow-list">
 				<!--显示笔记的面板-->
 				<div class="note-panel">
-					<div class="note-panel-title">Meow~World!</div>
+					<div class="note-panel-title"><a href="#" id="show-content">Meow~World!</a></div>
 					<div class="note-panel-content">啦啦啦，我是最萌的小猫，软耳朵，大眼睛~啦啦啦，我是最萌的小猫，软耳朵，大眼睛~啦啦啦，我是最萌的小猫，软耳朵，大眼睛~啦啦啦，我是最萌的小猫，软耳朵，大眼睛~啦啦啦，我是最萌的小猫，软耳朵，大眼睛~啦啦啦，我是最萌的小猫，软耳朵，大眼睛~啦啦啦，我是最萌的小猫，软耳朵，大眼睛~啦啦啦，我是最萌的小猫，软耳朵，大眼睛~啦啦啦，我是最萌的小猫，软耳朵，大眼睛~</div>
 					<div class="note-panel-footer">
 						<div class="note-panel-time"><i class="fa fa-calendar"></i>2015/8/1</div>
@@ -31,27 +31,38 @@
 				</div>
 
 				<div class="note-panel">
-					<div class="note-panel-title">Meow~World!</div>
+					<div class="note-panel-title"><a href="#" id="show-content">Meow~World!</a></div>
 					<div class="note-panel-content">啦啦啦，我是最萌的小大，我是啦，我是最软耳朵，大眼睛~啦啦啦，~</div>
 					<div class="note-panel-footer">
 						<div class="note-panel-time"><i class="fa fa-calendar"></i>2015/8/1</div>
 						<div class="note-panel-edit">
-							<i class="fa fa-pencil-square-o"></i>
-							<i class="fa fa-times"></i>
+							<i id="panel-edit" class="fa fa-pencil-square-o"></i>
+							<i id="panel-delete" class="fa fa-times"></i>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="meow-content">
-				<h1 class="meow-content-title">
+				<div class="view-content">
+					<h1 class="meow-content-title">
 					Meow~World!
 				</h1>
-				<p class="meow-content-note">
-					啦啦啦，我是最萌的小大，我是啦，我是最软耳朵，大眼睛~啦啦啦，~
-				</p>
-				<div class="content-edit">
-					<i class="fa fa-pencil-square-o"></i>
-					<i class="fa fa-times"></i>
+					<p class="meow-content-note">
+						啦啦啦，我是最萌的小大，我是啦，我是最软耳朵，大眼睛~啦啦啦，~
+					</p>
+					<div class="content-edit">
+						<i class="fa fa-pencil-square-o"></i>
+						<i class="fa fa-times"></i>
+					</div>
+				</div>
+				<div class="edit-content">
+					<input class="insert-title" type="text" />
+					<br />
+					<textarea class="insert-content"></textarea>
+					<div class="post-icons">
+						<i id="content-save" class="fa fa-check" style="color: red;"></i>
+						<i id="content-delete" class="fa fa-times"></i>
+					</div>
 				</div>
 			</div>
 
